@@ -32,7 +32,7 @@ export default function UpdateScreen({ navigation, route }) {
   const handleUpdateBook = async () => {
     try {
       const response = await fetch(
-        `http://localhost:7000/api/v1/books/books/${bookId}`,
+        `http://localhost:7000/api/v1/books/update-books/${bookId}`,
         {
           method: "PUT",
           headers: {
